@@ -3,7 +3,7 @@ body {
   margin: 0;
   padding: 0;
   overflow: hidden;
-  font-family: 'Baloo Da 2', cursive;
+  font-family: "Baloo Da 2", cursive;
 }
 
 p {
@@ -13,7 +13,7 @@ p {
 }
 
 a {
-  color: inherit; 
+  color: inherit;
   text-decoration: none;
   border-bottom: 5px dotted #2ff;
   display: inline-block;
@@ -25,7 +25,7 @@ a {
 }
 
 .font-sm {
-  font-size: 30px;
+  font-size: 1.5vw;
 }
 
 .bordered-box {
@@ -35,7 +35,7 @@ a {
 }
 
 a.icon-link {
-  color: inherit; 
+  color: inherit;
   text-decoration: none;
   border: none;
 }
@@ -119,7 +119,6 @@ a.icon-link {
   height: 100%;
   left: 50%;
   transition: 1s;
-
 }
 
 #welcomePage .rightBox .content {
@@ -133,7 +132,7 @@ a.icon-link {
 }
 
 #welcomePage .rightBox {
-  font-size: 50px;
+  font-size: 2.5vw;
   color: #2ff;
 }
 
@@ -211,7 +210,8 @@ a.icon-link {
   --nav-option-scaler: 1;
   --nav-option-tx: 0;
   --nav-option-ty: 0;
-  transform: translate(var(--nav-option-tx), var(--nav-option-ty)) scale(var(--nav-option-scaler));
+  transform: translate(var(--nav-option-tx), var(--nav-option-ty))
+    scale(var(--nav-option-scaler));
   cursor: pointer;
 }
 
@@ -295,17 +295,180 @@ a.icon-link {
   top: 120px;
 }
 
+#resumeContent .resumePreview {
+  width: 600px;
+  height: 90%;
+}
+
 button:hover {
   border: 5px solid #2ff !important;
 }
 
 #contactContent ion-icon {
-  font-size: 50px;
+  font-size: 2.5vw;
   width: 100px;
   color: #2ff;
 }
 
 #contactContent table {
-  font-size: 50px;
+  font-size: 2vw;
   color: #2ff;
+}
+
+@media only screen and (max-width: 1300px) {
+  body {
+    overflow-y: auto;
+  }
+
+  a {
+    border-bottom: 2px dotted #2ff;
+    line-height: 0.8;
+  }
+
+  .font-sm {
+    font-size: 20px;
+  }
+
+  .bordered-box {
+    margin: 10px;
+    padding: 10px;
+    border: 1px dotted #2ff;
+  }
+
+  a.icon-link {
+    color: inherit;
+    text-decoration: none;
+    border: none;
+  }
+
+  .heff:hover {
+    transform-origin: left;
+    transform: scale(1.05) translate(-50%, -50%);
+    cursor: pointer;
+    transition: 100ms;
+  }
+
+  .leftBox {
+    position: relative;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    width: 100%;
+  }
+
+  .rightBox {
+    position: relative;
+    display: none;
+    width: 100%;
+    top: auto;
+    left: 0;
+    height: auto;
+  }
+
+  #welcomePage .rightBox .content {
+    position: relative;
+    top: 0;
+    transform: none;
+    padding: 20px;
+  }
+
+  #welcomePage .rightBox {
+    font-size: 30px;
+    color: #2ff;
+  }
+
+  #welcomeBox {
+    --welcomeScaler: 0.8;
+    transform: translate(-160px, -160px) scale(var(--welcomeScaler));
+  }
+
+  #welcomeBox:hover {
+    --welcomeScaler: 0.9;
+  }
+
+  .schoolDiv .font-sm {
+    padding-top: 10px;
+  }
+
+  #previewBtn {
+    position: relative;
+    width: auto;
+    height: 50px;
+    border: 2px dotted #2ff;
+    font-size: 20px;
+    left: 0;
+    top: auto;
+    margin-top: 10px;
+  }
+
+  #downloadBtn {
+    margin-top: 10px;
+    position: relative;
+    width: auto;
+    height: 50px;
+    border: 2px dotted #2ff;
+    right: 0;
+    top: auto;
+    font-size: 20px;
+  }
+
+  #resumeContent .resumePreview {
+    width: 100%;
+    max-width: 800px;
+    height: 127vw;
+    max-height: 1130px;
+  }
+
+  button:hover {
+    border: 2px solid #2ff !important;
+  }
+
+  #contactContent ion-icon {
+    font-size: 30px;
+    width: 100px;
+    color: #2ff;
+  }
+
+  #contactContent table {
+    font-size: 30px;
+    color: #2ff;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .font-sm {
+    font-size: 3vw;
+  }
+
+  #welcomePage .rightBox .content {
+    transform: none;
+    padding: 10px;
+  }
+
+  #welcomePage .rightBox {
+    font-size: 3.5vw;
+    color: #2ff;
+  }
+
+  #welcomeBox {
+    --welcomeScaler: 0.6;
+    transform: translate(-160px, -160px) scale(var(--welcomeScaler));
+  }
+
+  #welcomeBox:hover {
+    --welcomeScaler: 0.7;
+  }
+
+  .schoolDiv .font-sm {
+    padding-top: 10px;
+  }
+
+
+  #contactContent ion-icon {
+    font-size: 4vw;
+    width: 50px;
+  }
+
+  #contactContent table {
+    font-size: 4vw;
+  }
 }

@@ -16,7 +16,11 @@ $(document).ready(() => {
               $(".welcomeMessage")
                 .text("Anirudh's Portfolio")
                 .fadeIn();
-              $(".leftBox").css("width", "50%");
+              if ($(window).width() <= 1300) {
+                $(".leftBox").css("height", "50%");
+              } else {
+                $(".leftBox").css("width", "50%");
+              }
               $(".rightBox").fadeIn(1500);
               $("#nav").fadeIn(1500);
               $(".option").click(e => {
