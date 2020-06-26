@@ -24,17 +24,17 @@ export default {
 		name: 'C++',
 		icon: './assets/cplusplus.svg',
 		color: '#004482',
-		knowledge: 95
+		knowledge: 90
 	}, {
 		name: 'CSS',
 		icon: './assets/css3.svg',
 		color: '#0170ba',
-		knowledge: 100
+		knowledge: 95
 	}, {
 		name: 'Firebase',
 		icon: './assets/firebase.svg',
 		color: '#f5820b',
-		knowledge: 85
+		knowledge: 80
 	}, {
 		name: 'HTML',
 		icon: './assets/html5.svg',
@@ -44,7 +44,7 @@ export default {
 		name: 'Javascript',
 		icon: './assets/javascript.svg',
 		color: '#f5de19',
-		knowledge: 95
+		knowledge: 90
 	}, {
 		name: 'Jquery',
 		icon: './assets/jquery.svg',
@@ -54,12 +54,12 @@ export default {
 		name: 'MongoDB',
 		icon: './assets/mongodb.svg',
 		color: '#449a45',
-		knowledge: 75
+		knowledge: 70
 	}, {
 		name: 'NodeJS',
 		icon: './assets/node-dot-js.svg',
 		color: '#77b063',
-		knowledge: 95
+		knowledge: 85
 	}, {
 		name: 'Python',
 		icon: './assets/python.svg',
@@ -69,6 +69,11 @@ export default {
 		name: 'ReactJS',
 		icon: './assets/react.svg',
 		color: '#53c1de',
-		knowledge: 95
+		knowledge: 90
+	}, {
+		name: 'ESLint',
+		icon: './assets/eslint.svg',
+		color: '#4b32c3',
+		knowledge: 75
 	}]
 };
