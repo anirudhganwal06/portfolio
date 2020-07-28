@@ -2,17 +2,17 @@ $(document).ready(() => {
 	$('.welcomeMessage')
 		.css('font-size', '70px')
 		.text('Hey!')
-		.fadeIn(15)
-		.fadeOut(15, () => {
+		.fadeIn(1500)
+		.fadeOut(1500, () => {
 			$('.welcomeMessage')
 				.css('font-size', '50px')
 				.text('Welcome!')
-				.fadeIn(15)
-				.fadeOut(15, () => {
+				.fadeIn(1500)
+				.fadeOut(1500, () => {
 					$('.welcomeMessage')
 						.text('I am Anirudh!')
-						.fadeIn(15)
-						.fadeOut(15, () => {
+						.fadeIn(1500)
+						.fadeOut(1500, () => {
 							$('.welcomeMessage')
 								.text('Anirudh\'s Portfolio')
 								.fadeIn();
@@ -21,8 +21,8 @@ $(document).ready(() => {
 							} else {
 								$('.leftBox').css('width', '50%');
 							}
-							$('.rightBox').fadeIn(15);
-							$('#nav').fadeIn(15);
+							$('.rightBox').fadeIn(1500);
+							$('#nav').fadeIn(1500);
 							$('.option').click(e => {
 								$('#nav .option').removeClass('selected');
 								$('#' + e.currentTarget.id).addClass('selected');
